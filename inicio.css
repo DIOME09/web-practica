@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto Condensed", serif;
+    font-size: 20px;
+   
+
+}
+body{
+    background-color: #f0f8f7;
+}
+header{
+    background-color: #35525f;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+
+}
+.logo, .imagen-logo{
+    cursor: pointer;
+    border-radius: 50%;
+    margin-right: auto;
+    
+}
+
+.header-principal .logo img{
+    height: 70px;
+    width: auto;
+    transition: all 0.3s;
+    
+
+}
+.header-principal .logo img:hover{
+    transform: scale(1.2);
+
+}
+.header-principal .menu-moderno{
+    list-style: none;
+    
+}
+.header-principal .menu-moderno li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.header-principal .menu-moderno li:hover{
+    transform: scale(1.1);
+}
+
+.header-principal .menu-moderno a{
+    font-size: 700;
+    color: #ecebe0;
+    text-decoration: none;
+}
+.header-principal .menu-moderno li a:hover{
+    color: #ddd471;
+}
+.header-principal .btn button{
+    font-weight: 700;
+    color: #17191a;
+    padding: 9px 25px;
+    background: #ecebe0;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ;
+
+}
+.header-principal .btn button:hover{
+    background-color: #ecebe0;
+    color: #ddd471;
+    transform: scale(1.1);
+}
