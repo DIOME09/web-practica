@@ -1,65 +1,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: "Roboto Condensed", serif;
-    font-size: 20px;
-   
-
 }
-body{
+
+body {
+    font-size: 20px;  /* Tamaño base para todo el sitio */
+    font-family: "Lato", sans-serif;
     background-color: #f0f8f7;
+    background-image: url("img/computer-4795762_1920.jpg"); /* Asegúrate de que la ruta sea correcta */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: lighten; /* Suaviza el fondo */
 }
-header{
-    background-color: #35525f;
-    display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    height: 85px;
-    padding: 5px 10%;
 
+header {
+    background-color: #35365f;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 65px;
+    padding: 5px 5%;
 }
-.logo, .imagen-logo{
+
+.logo, .imagen-logo {
     cursor: pointer;
     border-radius: 50%;
     margin-right: auto;
-    
 }
 
-.header-principal .logo img{
+.header-principal .logo img {
     height: 70px;
     width: auto;
     transition: all 0.3s;
-    
-
 }
-.header-principal .logo img:hover{
+
+.header-principal .logo img:hover {
     transform: scale(1.2);
+}
 
-}
-.header-principal .menu-moderno{
+.header-principal .menu-moderno {
     list-style: none;
-    
 }
-.header-principal .menu-moderno li{
+
+.header-principal .menu-moderno li {
     display: inline-block;
     padding: 0 20px;
-}
-.header-principal .menu-moderno li:hover{
-    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
-.header-principal .menu-moderno a{
-    font-size: 700;
+.header-principal .menu-moderno li:hover {
+    transform: translateY(-2px); /* Efecto más sutil y profesional */
+}
+
+.header-principal .menu-moderno a {
+    font-weight: 700;
     color: #ecebe0;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
-.header-principal .menu-moderno li a:hover{
+
+.header-principal .menu-moderno li a:hover {
     color: #ddd471;
 }
-.header-principal .btn button{
+
+.header-principal .btn button {
     font-weight: 700;
     color: #17191a;
     padding: 9px 25px;
@@ -67,11 +75,145 @@ header{
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ;
-
+    transition: all 0.3s;
 }
-.header-principal .btn button:hover{
+
+.header-principal .btn button:hover {
     background-color: #ecebe0;
     color: #ddd471;
     transform: scale(1.1);
 }
+
+.ia-img, .soporte, .sucursales {
+    margin: 70px;
+    width: 500px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ia-img:hover, .soporte:hover, .sucursales:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.section-1, .section-2, .section-3 {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border-left: 4px solid #3498db;
+    padding-left: 10px;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.section-1:hover, .section-2:hover, .section-3:hover {
+    color: #3498db;
+}
+
+.articulo01, .articulo02, .articulo03 {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.articulo01:hover, .articulo02:hover, .articulo03:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo unificado para los párrafos */
+.parrafo01, .parrafo02, .parrafo03 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    text-indent: 20px;
+    transition: all 0.3s ease;
+}
+
+.parrafo01:hover, .parrafo02:hover, .parrafo03:hover {
+    color: #333;
+}
+
+/* Estilo para listas dentro de párrafos */
+.parrafo01 ol, .parrafo02 ol, .parrafo03 ol {
+    margin-left: 40px;
+    padding-left: 0;
+    list-style-type: decimal;
+}
+
+.parrafo01 ol li, .parrafo02 ol li, .parrafo03 ol li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+.parrafo01 ol li::marker, .parrafo02 ol li::marker, .parrafo03 ol li::marker {
+    color: #3498db;
+}
+.footer {
+    background-color: #35365f;
+    padding: 20px 0;
+    text-align: center;
+    color: #ecebe0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-elem a {
+    text-decoration: none;
+    color: #ecebe0;
+    transition: color 0.3s ease;
+}
+
+.menu-elem a:hover {
+    color: #ddd471;
+}
+
+.social-media {
+    margin: 10px 0;
+}
+
+.social-icon {
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 24px;
+    color: #ecebe0;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #ddd471;
+}
+
+.text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ecebe0;
+}
+
